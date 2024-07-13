@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.katalog{
+  font-weight:bold ;
+}
+.menu-bar{
+  
+  text-align: center;
+  
+}
+
+.menu-bar ul{
+  display: flex;
+  list-style: none;
+  align-items: center;
+  font-variant: 'h6';
+  
+}
+
+
+.menu-bar ul li {
+  /*width: 120px;*/
+  margin: 5px;
+  padding: 5px;
+ 
+}
+
+.menu-bar ul li a{
+  text-decoration: none;
+  color: #fff;
+  
+ 
+}
+
+.activ, .menu-bar ul li:hover{
+  color: #AFEAE3;
+  
+  
+}
+
+.sub-menu-1{
+  display: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1{
+  display: flex;
+  position: absolute;
+  background:#1976d2;;
+  margin-top: 5px;
+ 
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul {
+  display: block;
+  margin: 5px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li{
+  width: 150px;
+  padding: 3px;
+  border-bottom: 1px dotted #fff;
+  background: transparent;
+  border-radius: 0;
+  
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child{
+  border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover{
+  
+  color:black
+}
+
+
+
