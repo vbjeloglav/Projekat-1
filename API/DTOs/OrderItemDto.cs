@@ -10,8 +10,10 @@ namespace API.DTOs
         public int ProductId { get; set; }
         public string Name { get; set; }
         public string Slika { get; set; }
+        public int OrderId { get; set; }
         public string Cijena { get; set; }
         public int Kolicina { get; set; }
+        public bool Returned { get; set; }
 
     }
 }

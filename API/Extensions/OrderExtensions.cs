@@ -25,10 +25,12 @@ namespace API.Extensions
                     OrderItems=order.OrderItems.Select(item=>new OrderItemDto
                     {
                         ProductId=item.ItemOrdered.ProductId,
+                        OrderId = item.OrderId,
                         Name=item.ItemOrdered.Ime,
                         Slika=item.ItemOrdered.Slika,
                         Cijena=item.Cijena.ToString(),////////
-                        Kolicina= item.Kolicina
+                        Kolicina= item.Kolicina,
+                        Returned = item.Returned
                     }).ToList()
 
                  }).AsNoTracking();

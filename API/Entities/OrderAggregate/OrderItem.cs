@@ -9,7 +9,9 @@ namespace API.Entities.OrderAggregate
     {
         public int Id { get; set; }
         public ProductItemOrdered ItemOrdered { get; set; }
+        public int OrderId { get; set; }
         public long Cijena { get; set; }
         public int Kolicina { get; set; }   
+        public bool Returned { get; set; }
     }
 }

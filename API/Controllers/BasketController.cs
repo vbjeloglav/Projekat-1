@@ -99,7 +99,6 @@ namespace API.Controllers
     {
         var buyerId = GetBuyerId();
         var basket = await RetrieveBasket(buyerId);
-        
         if (basket == null || basket.Items.Count == 0)
         {
             return BadRequest(new ProblemDetails { Title = "Korpa je prazna ili nije pronađena." });

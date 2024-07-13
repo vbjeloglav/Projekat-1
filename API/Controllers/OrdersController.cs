@@ -61,7 +61,7 @@ namespace API.Controllers
                         Slika=productItem.Slika
                     };
                     var OrderItem = new OrderItem
-                    {
+                    {                        
                         ItemOrdered=ItemOrdered,
                         Cijena=productItem.Cijena,
                         Kolicina= item.Quantity
