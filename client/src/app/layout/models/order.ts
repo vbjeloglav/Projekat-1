@@ -26,3 +26,12 @@ export interface Order {
   total: number;
   days: number;
 }
+
+export interface Reservation {
+  id: number;
+  customerName: string;
+  customerEmail: string;
+  productId: number;
+  reservedFrom: string;
+  reservedTo: string;
+}

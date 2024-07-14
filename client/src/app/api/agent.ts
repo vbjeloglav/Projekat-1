@@ -144,6 +144,10 @@ const Payments = {
   createPaymentIntent: () => requests.post("payments", {}),
 };
 
+const Reservations = {
+  list: () => requests.get("orders/rezervacije"),
+};
+
 const agent = {
   Catalog,
   TestError,
@@ -152,5 +156,6 @@ const agent = {
   Orders,
   Payments,
   Admin,
+  Reservations,
 };
 export default agent;
